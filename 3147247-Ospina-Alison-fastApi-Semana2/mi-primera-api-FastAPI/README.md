@@ -1,83 +1,48 @@
-# Mi Primera API FastAPI
+# Mi API FastAPI - Semana 2
 
 ## ¿Qué hace?
 
-Una API básica creada en el Bootcamp FastAPI Semana 1.
+API mejorada con validación automática de datos y type hints.
+
+## Nuevos Features (Semana 2)
+
+- ✅ Type hints en todas las funciones
+- ✅ Validación automática con Pydantic
+- ✅ Endpoint POST para crear datos
+- ✅ Parámetros de ruta (ejemplo: /products/{id})
+- ✅ Búsqueda con parámetros query
 
 ## ¿Cómo ejecutar?
 
 ```bash
-pip install -r requirements.txt
+pip install fastapi pydantic uvicorn
 uvicorn main:app --reload
 ```
 
 
-3. **Subir a GitHub** (paso a paso con instructor):
-   - Crear repositorio: `tu-apellido-primera-api`
-   - `git init`
-   - `git add .`
-   - `git commit -m "Mi primera API FastAPI"`
-   - `git push`
+**2. Subir a GitHub** (10 min):
 
-### ✅ Criterio de Éxito
-- Repositorio en GitHub con 3 archivos mínimos
-- README se ve bien en GitHub
+```bash
+# En tu terminal, en la carpeta de tu proyecto
+git add .
+git commit -m "Semana 2: API con Pydantic y Type Hints"
+git push
 
----
-
-## 🚨 Si tienes problemas
-
-**NO te compliques**. Este bloque es para consolidar, no para frustrarse.
-
-### Problemas comunes:
-- **Git no funciona**: El instructor te ayudará
-- **Endpoint no responde**: Revisar sintaxis del código
-- **No sale en /docs**: Reiniciar uvicorn
-
-### Solución rápida:
-- Levanta la mano
-- Pide ayuda a un compañero
-- Enfócate en lo que SÍ funciona
-
----
-
-## 🎯 Resultado Final (Lo que deberías tener)
-
-Al final del Bloque 3:
-
-1. **✅ API con 3-4 endpoints funcionando**
-2. **✅ Código en GitHub**
-3. **✅ README básico**
-4. **✅ Sensación de logro**
-
-### 📁 Estructura Final Mínima
+**Frases de lo mas relevante**
+-Se implementaron endpoints para crear, listar, buscar y obtener productos por ID, mostrando operaciones CRUD básicas.
+-Se usó manejo de errores con HTTPException para devolver respuestas adecuadas cuando un producto no existe.
+-La API maneja un almacenamiento temporal en memoria usando una lista simple para simular una base de datos.
 
 
----
+**2. Subir a GitHub** (10 min):
 
-## 📊 Auto-evaluación (1 minuto)
+```bash
+# En tu terminal, en la carpeta de tu proyecto
+git add .
+git commit -m "Semana 2: API con Pydantic y Type Hints"
+git push
 
-**¿Lograste crear tu primera API?** ✅ Sí / ❌ No
-si
-
-**¿Está funcionando /docs?** ✅ Sí / ❌ No
-si
-
-**¿Está en GitHub?** ✅ Sí / ❌ No
-si
-
-**Si respondiste 2/3 "Sí": ¡EXCELENTE!**
-**Si respondiste 1/3 "Sí": ¡MUY BIEN!**
-**Si respondiste 0/3 "Sí": ¡El instructor te ayudará!**
-
----
-
-## 🚀 Preparación para Semana 2
-
-Con estos ejercicios básicos completados, en la Semana 2 estarás listo para:
-
-- **Python Type Hints** (conceptos que ya usaste sin saberlo)
-- **Pydantic Models** (para datos más estructurados)
-- **Más tipos de endpoints** (POST, PUT, DELETE básicos)
-
-**¡Felicidades por completar tu primera semana! 🎉**
+tu-repositorio/
+├── main.py                    # API con Type Hints + Pydantic
+├── requirements.txt           # fastapi, pydantic, uvicorn
+└── README.md                  # Documentación actualizada
